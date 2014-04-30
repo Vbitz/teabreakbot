@@ -146,6 +146,8 @@ class TeabreakBot(irc.IRCClient):
                             if teabreakcount > 0:
                                 if teabreakcount == 500:
                                     self.say(channel, "You guys slack off quite a bit don't you? Enjoy "+breaktype+" #"+str(teabreakcount)+"!")
+                                elif teabreakcount == 1000:
+                                    self.say(channel, "You guys slack off too much. Enjoy "+breaktype+" #"+str(teabreakcount)+"!")
                                 else:
                                     self.say(channel, "Enjoy "+breaktype+" #"+str(teabreakcount)+"!")
                             else:
